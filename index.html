@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Clothing Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Simple Clothing Store</h1>
+      <p>Browse products and manage your catalog.</p>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Add Product</h2>
+        <form id="product-form">
+          <label>
+            Name
+            <input id="name" name="name" type="text" required maxlength="120" />
+          </label>
+          <label>
+            Price
+            <input id="price" name="price" type="number" step="0.01" min="0" required />
+          </label>
+          <label>
+            Category
+            <input id="category" name="category" type="text" required maxlength="80" />
+          </label>
+          <button type="submit">Add Product</button>
+        </form>
+        <p id="form-message" aria-live="polite"></p>
+      </section>
+
+      <section class="card">
+        <div class="products-header">
+          <h2>Products</h2>
+          <button id="refresh-btn" type="button">Refresh</button>
+        </div>
+        <p id="loading-message">Loading products...</p>
+        <ul id="product-list" class="product-list"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
