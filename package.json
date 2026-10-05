@@ -1,0 +1,14 @@
+{
+  "name": "simple-clothing-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple full-stack clothing store using Netlify Functions and Supabase",
+  "main": "netlify/functions/products.js",
+  "scripts": {
+    "dev": "netlify dev",
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4"
+  }
+}
